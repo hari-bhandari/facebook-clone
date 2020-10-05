@@ -1,11 +1,11 @@
 import express from 'express'
-// const path=require('path')
-
+import helmet from 'helmet'
 const app=express()
 const PORT= process.env.PORT||5000
 ////////////////////////////////
 
-//Body parser
+//implementing helmet
+app.use(helmet())
 //implementing error handler
 const server=app.listen(PORT,console.log(`server running in Production mode on port ${PORT}`))
 
