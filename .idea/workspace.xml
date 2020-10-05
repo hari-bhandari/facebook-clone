@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffd9b765-8869-4fd2-b143-8c396238b3a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <workItem from="1601828611620" duration="8183000" />
       <workItem from="1601837946238" duration="2724000" />
       <workItem from="1601875770727" duration="3903000" />
-      <workItem from="1601883549222" duration="3693000" />
+      <workItem from="1601883549222" duration="4005000" />
     </task>
     <servers />
   </component>
