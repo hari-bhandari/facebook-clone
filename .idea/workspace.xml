@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffd9b765-8869-4fd2-b143-8c396238b3a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/auth/Login/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/auth/Login/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +25,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/layout" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components/layout" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,7 +46,7 @@
       <updated>1601828610528</updated>
       <workItem from="1601828611620" duration="8183000" />
       <workItem from="1601837946238" duration="2724000" />
-      <workItem from="1601875770727" duration="2003000" />
+      <workItem from="1601875770727" duration="3903000" />
     </task>
     <servers />
   </component>
