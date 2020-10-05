@@ -14,6 +14,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 
 import './Header.css'
 import {Avatar, IconButton} from "@material-ui/core";
+
 const Header = () => {
     useState()
     return (
@@ -25,25 +26,30 @@ const Header = () => {
                     <input type="text"/>
                 </div>
             </div>
-            <div className="header__center">
-
+            <div className="header__menu-icon">
                 <div className="header__option">
                     <MenuIcon fontSize={"large"}/>
                 </div>
-                <div className="header__option">
-                    <HomeIcon fontSize="large"/>
-                </div>
-                <div className="header__option">
-                    <FlagIcon fontSize="large"/>
-                </div>
-                <div className="header__option">
-                    <SubscriptionsOutlinedIcon fontSize="large"/>
-                </div>
-                <div className="header__option">
-                    <StorefrontOutlinedIcon fontSize="large"/>
-                </div>
-                <div className="header__option">
-                    <SupervisedUserCircleIcon fontSize="large"/>
+            </div>
+            <div className="header__center-top">
+                <div className="header__center">
+
+
+                    <div className="header__option">
+                        <HomeIcon fontSize="large"/>
+                    </div>
+                    <div className="header__option">
+                        <FlagIcon fontSize="large"/>
+                    </div>
+                    <div className="header__option">
+                        <SubscriptionsOutlinedIcon fontSize="large"/>
+                    </div>
+                    <div className="header__option">
+                        <StorefrontOutlinedIcon fontSize="large"/>
+                    </div>
+                    <div className="header__option">
+                        <SupervisedUserCircleIcon fontSize="large"/>
+                    </div>
                 </div>
             </div>
             <div className="header__right">
@@ -51,9 +57,7 @@ const Header = () => {
                     <Avatar/>
                     <h4>Hari</h4>
                 </div>
-                <IconButton>
-                    <AddIcon/>
-                </IconButton>
+
                 <IconButton>
                     <ForumIcon/>
                 </IconButton>
