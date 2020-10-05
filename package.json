@@ -1,7 +1,6 @@
 {
   "name": "fb-clone",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
@@ -28,5 +27,15 @@
     "mongoose": "^5.10.3",
     "mongoose-slug-generator": "^1.0.4",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hari-bhandari/facebook-clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hari-bhandari/facebook-clone/issues"
+  },
+  "homepage": "https://github.com/hari-bhandari/facebook-clone#readme",
+  "description": ""
 }
