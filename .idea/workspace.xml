@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffd9b765-8869-4fd2-b143-8c396238b3a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/config/env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middlewares/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middlewares/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/errorResponse.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/utils/errorResponse.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +51,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nepal\WebstormProjects\facebook-clone\server" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/components/layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/config" />
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="C:\Users\nepal\WebstormProjects\facebook-clone\server" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -79,7 +76,7 @@
       <workItem from="1601875770727" duration="3903000" />
       <workItem from="1601883549222" duration="4005000" />
       <workItem from="1601969886303" duration="257000" />
-      <workItem from="1601970396488" duration="4094000" />
+      <workItem from="1601970396488" duration="8243000" />
     </task>
     <servers />
   </component>
@@ -99,6 +96,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="450" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601981508975">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="450" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1601981508975" />
     <state x="644" y="324" width="599" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601887881575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
