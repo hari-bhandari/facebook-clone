@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffd9b765-8869-4fd2-b143-8c396238b3a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/config/env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middlewares/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middlewares/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +59,8 @@
       <recent name="$PROJECT_DIR$/client/src/components/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server/config" />
       <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/server/config" />
       <recent name="C:\Users\nepal\WebstormProjects\facebook-clone\server" />
     </key>
   </component>
@@ -76,7 +80,7 @@
       <workItem from="1601875770727" duration="3903000" />
       <workItem from="1601883549222" duration="4005000" />
       <workItem from="1601969886303" duration="257000" />
-      <workItem from="1601970396488" duration="8243000" />
+      <workItem from="1601970396488" duration="10013000" />
     </task>
     <servers />
   </component>
@@ -133,5 +137,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.-13.1920.1040@0.0.1920.1040" timestamp="1601887902317" />
+    <state x="683" y="292" width="618" height="522" key="find.popup" timestamp="1601984862132">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="683" y="292" width="618" height="522" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1601984862132" />
   </component>
 </project>

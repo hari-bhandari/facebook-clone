@@ -1,6 +1,5 @@
-
-const ErrorResponse= require('../utils/errorResponse')
-const errorHandler=(err,req,res,next)=>{
+import ErrorResponse from "../utils/errorResponse.js";
+export const errorHandler=(err,req,res,next)=>{
     let error={...err};
     error.message=err.message;
     console.log(err);
@@ -25,4 +24,3 @@ const errorHandler=(err,req,res,next)=>{
         error:error.message|| 'Server Error! Please try again later'
     })
 }
-module.exports=errorHandler;

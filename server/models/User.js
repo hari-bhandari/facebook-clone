@@ -49,7 +49,7 @@ UserSchema.pre('save',async function(next) {
 //sign jwt and return
 UserSchema.methods.getSignedJwtToken=function(){
     return jwt.sign({id:this._id},'JWT_SECRET',{
-        expiresIn:'JWT_EXPIRE'
+        expiresIn:'30d'
     })
 }
 //Match user entered password to hashed password
