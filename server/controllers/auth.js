@@ -1,11 +1,10 @@
-const User=require('../models/User');
-const asyncHandler=require('../middlewares/async');
-const ErrorResponse=require('../utils/errorResponse');
-const crypto=require('crypto')
+import User from '../models/User.js'
+import asyncHandler from "../middlewares/async.js";
+import ErrorResponse from "../utils/errorResponse.js";
 //@desc register a user
 //@route POST /api/v1/auth/register
 //@access Public
-const register=asyncHandler(async (req,res,next)=>{
+export const register=asyncHandler(async (req, res, next)=>{
     const {name,email,password,role}=req.body;
     const isUser=User.findOne({email})
     console.log(isUser.email)
@@ -23,7 +22,7 @@ const register=asyncHandler(async (req,res,next)=>{
 //@desc get current logged in user
 //@route GET /api/auth/me
 //@access Private
-const getMe=asyncHandler(async (req,res,next)=>{
+export const getMe=asyncHandler(async (req, res, next)=>{
     const user=await User.findById(req.user.id);
 
     res.status(200).json({
@@ -34,7 +33,7 @@ const getMe=asyncHandler(async (req,res,next)=>{
 //@desc register a user
 //@route POST /api/v1/auth/login
 //@access Public
-const login=asyncHandler(async (req,res,next)=>{
+export const login=asyncHandler(async (req, res, next)=>{
     const {email,password}=req.body;
     //Validate email and password
     if(!email||!password){
@@ -54,25 +53,6 @@ const login=asyncHandler(async (req,res,next)=>{
 
 })
 
-const login=asyncHandler(async (req,res,next)=>{
-    const {email,password}=req.body;
-    //Validate email and password
-    if(!email||!password){
-        return next(new ErrorResponse(`Please provide user or a password`,400))
-    }
-    //check for a user
-    const user=await User.findOne({email}).select('+password');
-    if(!user){
-        return next(new ErrorResponse(`Please provide valid user or a password`,401))
-    }
-    //check if password matches
-    const isMatch=await user.matchPassword(password)
-    if(!isMatch){
-        return next(new ErrorResponse(`Please provide valid user or a password`,401))
-    }
-    sendTokenResponse(user,200,res)
-
-})
 
 //get token from model,create cookie and send
 // response
