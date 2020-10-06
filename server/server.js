@@ -12,7 +12,8 @@ const PORT= process.env.PORT||5000
 app.set('trust proxy',true);
 dotenv.config({path:'./config/config.env'})
 connectDB()
-
+//Body parser
+app.use(express.json());
 //connecting to db
 //implementing helmet
 app.use(helmet())
