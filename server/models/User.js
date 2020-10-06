@@ -75,5 +75,4 @@ UserSchema.methods.getResetPasswordToken=function(){
     this.resetPasswordExpire=Date.now()+5*60*1000;
     return resetToken;
 }
-//Encry password using bcrypt
-module.exports=mongoose.model('User',UserSchema)
+export default mongoose.model('User',UserSchema)
