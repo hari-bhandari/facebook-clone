@@ -1,7 +1,7 @@
-const mongoose=require('mongoose'); //importing mongoose
+import mongoose from 'mongoose' //importing mongoose
 //connecting to mongodb
 const connectDB=async ()=>{
-    const conn=await mongoose.connect(process.env.MONGO_URI,{
+    const conn=await mongoose.connect('mongodb+srv://hari:hari@cluster0.humga.mongodb.net/facebook?retryWrites=true&w=majority',{
         useNewUrlParser:true,
         useCreateIndex:true,
         useFindAndModify:false,
@@ -11,4 +11,4 @@ const connectDB=async ()=>{
 
 
 }
-module.exports=connectDB;
+export default connectDB
