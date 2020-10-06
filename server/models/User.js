@@ -28,14 +28,6 @@ const UserSchema=new mongoose.Schema({
         maxLength:30,
         select:false
     },
-    cart:{
-        type: Array,
-        default: []
-    },
-    cartSize:{
-        type:Number,
-        default:0
-    },
     resetPasswordToken:String,
     resetPasswordExpire:Date,
     createdAt: {
