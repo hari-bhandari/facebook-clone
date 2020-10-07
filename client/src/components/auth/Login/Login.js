@@ -1,8 +1,8 @@
-import React from 'react';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import React, {useState} from 'react';
 import './Login.css'
+import GoogleLogin from "react-google-login";
 const Login = () => {
-    function toggleSignup(){
+    const toggleSignup=()=>{
         document.getElementById("login-toggle").style.backgroundColor="#fff";
         document.getElementById("login-toggle").style.color="#222";
         document.getElementById("signup-toggle").style.backgroundColor="#57b846";
@@ -11,7 +11,7 @@ const Login = () => {
         document.getElementById("signup-form").style.display="block";
     }
 
-    function toggleLogin(){
+    const toggleLogin=()=>{
         document.getElementById("login-toggle").style.backgroundColor="#57B846";
         document.getElementById("login-toggle").style.color="#fff";
         document.getElementById("signup-toggle").style.backgroundColor="#fff";
@@ -19,7 +19,25 @@ const Login = () => {
         document.getElementById("signup-form").style.display="none";
         document.getElementById("login-form").style.display="block";
     }
+    const [login, setSignUp] = useState({
+        email: '',
+        password: ''
+    });
+    const onChangeForLogin = e => setUser({ ...user, [e.target.name]: e.target.value });
+    const [user, setUser] = useState({
+        name: '',
+        email: '',
+        password: '',
+        password2: ''
+    });
 
+    const { name, email, password, password2 } = user;
+
+    const onChangeForSignup = e => setUser({ ...user, [e.target.name]: e.target.value });
+
+    const getDataFromGoogle=(response)=>{
+        console.log(response)
+    }
     return (
         <div className="form-modal">
 
@@ -48,7 +66,13 @@ const Login = () => {
                     <button type="button" className="btn signup">create account</button>
                     <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
                     <hr/>
-                    <button type="button" className="btn -box-sd-effect"> sign in with google</button>
+                    <GoogleLogin
+                        clientId="1027946307846-prc53klgk61cijsetp0n0akd5bqj6eqj.apps.googleusercontent.com"
+                        buttonText="Signup with Google"
+                        onSuccess={getDataFromGoogle}
+                        onFailure={()=>{console.log('fail')}}
+                        cookiePolicy={'single_host_origin'}
+                    />
                     <button type="button" className="btn -box-sd-effect">sign in with Facebook</button>
                 </form>
             </div>
