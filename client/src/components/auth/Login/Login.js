@@ -11,25 +11,29 @@ const Login = () => {
         email: '',
         password: ''
     });
-    const onChangeForLogin = e => setUser({ ...user, [e.target.name]: e.target.value });
-    const [user, setUser] = useState({
+    const onChangeForLogin = e => setLogin({ ...login, [e.target.name]: e.target.value });
+    const [signup, setSignup] = useState({
         name: '',
         email: '',
         password: '',
         password2: ''
     });
 
-    const { name, email, password, password2 } = user;
+    const { name, email, password, password2 } = signup;
 
-    const onChangeForSignup = e => setUser({ ...user, [e.target.name]: e.target.value });
+    const onChangeForSignup = e => setSignup({ ...signup, [e.target.name]: e.target.value });
 
     const getDataFromGoogle=(response)=> {
-        setUser({
-            name: response.name,
-            email: response.profileObj.email
+        console.log(response)
+        setSignup({
+            name: response.profileObj.name,
+            email: response.profileObj.email,
+            password: '',
+            password2: ''
         })
         setLogin({
-            email: response.profileObj.email
+            email: response.profileObj.email,
+            password: ''
         })
 
     }
@@ -41,8 +45,8 @@ const Login = () => {
                     <div className="formBx">
                         <form action="">
                             <h2>Sign In</h2>
-                            <input type="Email" name="email" placeholder="Email" onChange={onChangeForLogin}/>
-                            <input type="password" name="password" placeholder="Password" onChange={onChangeForLogin}/>
+                            <input type="Email" name="email" placeholder="Email" onChange={onChangeForLogin} value={login.email}/>
+                            <input type="password" name="password" placeholder="Password" value={login.password} onChange={onChangeForLogin}/>
                             <input type="submit" name="" value="Login"/>
                             <GoogleLogin
                                 clientId="1027946307846-prc53klgk61cijsetp0n0akd5bqj6eqj.apps.googleusercontent.com"
@@ -62,11 +66,18 @@ const Login = () => {
                     <div className="formBx">
                         <form action="" onSubmit="return false;">
                             <h2>Create an account</h2>
-                            <input type="text" name="name" placeholder="Name" onChange={onChangeForSignup}/>
-                            <input type="email" name="email" placeholder="Email Address" onChange={onChangeForSignup}/>
-                            <input type="password" name="password" placeholder="Create Password" onChange={onChangeForSignup}/>
-                            <input type="password" name="password2" placeholder="Confirm Password" onChange={onChangeForSignup}/>
+                            <input type="text" name="name" placeholder="Name" value={name} onChange={onChangeForSignup} v/>
+                            <input type="email" name="email" placeholder="Email Address" value={email} onChange={onChangeForSignup}/>
+                            <input type="password" name="password" placeholder="Create Password" value={password} onChange={onChangeForSignup}/>
+                            <input type="password" name="password2" placeholder="Confirm Password" value={password2} onChange={onChangeForSignup}/>
                             <input type="submit" name="" value="Sign Up"/>
+                            <GoogleLogin
+                                clientId="1027946307846-prc53klgk61cijsetp0n0akd5bqj6eqj.apps.googleusercontent.com"
+                                buttonText="Signup with Google"
+                                onSuccess={getDataFromGoogle}
+                                onFailure={()=>{console.log('fail')}}
+                                cookiePolicy={'single_host_origin'}
+                            />
                             <p className="signup">
                                 Already have an account ?
                                 <a href="#" onClick={toggleForm}>Sign in.</a>
